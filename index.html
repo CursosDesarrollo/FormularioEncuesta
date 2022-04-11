@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Que Tanto Sabes De How I Met Your Mother</h1>
+    <p id="description">
+      En el siguiente cuestinario vas a poner en juego tus conocimientos a cerca de How I Met Your Mother y sabras si realmente eres un gran fan. 
+    </p>
+  </header>
+  <main>
+    <form id="survey-form">
+      <input type="radio" name="Seleccion" id="Default" value="Default" checked>
+      <input type="radio" name="Seleccion" id="Atras1" value="Atras1">
+      <input type="radio" name="Seleccion" id="Atras2" value="Atras2">
+      <input type="radio" name="Seleccion" id="Atras3" value="Atras3">
+      <input type="radio" name="Seleccion" id="Atras4" value="Atras4">
+      <input type="radio" name="Seleccion" id="Siguiente1" value="Siguiente1">
+      <input type="radio" name="Seleccion" id="Siguiente2" value="Siguiente2">
+      <input type="radio" name="Seleccion" id="Siguiente3" value="Siguiente3">
+      <input type="radio" name="Seleccion" id="Siguiente4" value="Siguiente4">
+      <div class="PrimaryData DesignDefault">
+        <div class="limit">
+          <p class="Context">Primero Queremos Conocer Un Poco Sobre Ti</p>
+          <label for="name" id="name-label" class="Options">
+            <h2>Nombre:</h2><input type="text" id="name" id="name" placeholder="Ingresa Tu Nombre" required autocomplete="off">
+          </label>
+          <label for="email" id="email-label" class="Options">
+            <h2>Email:</h2><input type="email" name="email" id="email" placeholder="Ingresa Tu Email" required autocomplete="off">
+          </label>
+          <label for="number" id="number-label" class="Options">
+            <h2>Edad:</h2><input type="number" name="edad" id="number" min="10" max="100" placeholder="Ingresa Tu Edad" autocomplete="off">
+          </label>
+          <label for="Siguiente1" class="ButtonAction">Siguiente</label>
+        </div>
+      </div>
+      <div class="SecondData DesignDefault">
+        <div class="limit">
+          <div class="FavoriteCharacter">
+            <p class="Context">Escoge A Tu Personaje O Personajes Favoritos</p>
+            <div class="Options">
+              <div>
+                <input type="checkbox" name="TedMosby" id="TedMosby" value="Ted Mosby">
+                <label for="TedMosby">Ted Mosby</label>
+              </div>
+              <div>
+                <input type="checkbox" name="BarneyStinson" id="BarneyStinson" value="Barney Stinson">
+                <label for="BarneyStinson">Barney Stinson</label>
+              </div>
+              <div>
+                <input type="checkbox" name="MarshallEriksen" id="MarshallEriksen" value="Marshall Eriksen">
+                <label for="MarshallEriksen">Marshall Eriksen</label>
+              </div>
+              <div>
+                <input type="checkbox" name="LilyAldrin" id="LilyAldrin" value="Lily Aldrin">
+                <label for="LilyAldrin">Lily Aldrin</label>
+              </div>
+              <div>
+                <input type="checkbox" name="RobinScherbatsky" id="RobinScherbatsky" value="Robin Scherbatsky">
+                <label for="RobinScherbatsky">Robin Scherbatsky</label>
+              </div>
+              <div>
+                <input type="checkbox" name="otro" id="otro" value="otro">
+                <label for="otro">Otro</label>
+                <input type="text" name="OtroText" id="OtroText" placeholder="¿ Cual ?">
+              </div>
+            </div>
+          </div>    
+          <div class="FavoriteCouple">
+            <p class="Context">Cual Es Tu Pareja Favorita De How I Met Your Mother</p>
+            <select name="select" id="dropdown">
+              <option disabled selected value>Selecciona Una Pareja</option>
+              <option value="MarshallLily">Marshall Y Lily</option>
+              <option value="RobinBarney">Robin Y Barney</option>
+              <option value="TedTracy">Ted Y Tracy</option>
+            </select>
+          </div>
+          <div class="ButtonsOptions">
+            <label for="Atras1" class="ButtonAction">Atras</label>
+            <label for="Siguiente2" class="ButtonAction">Siguiente</label>
+          </div>
+        </div>
+      </div>
+      <div class="ThirdData DesignDefault">
+        <div class="limit">
+          <div class="QuestionsRadio">
+            <p class="Context">¿Qué película ven Ted, Barney y Marshall cada tres años?</p>
+            <img src="./img/FirstQuestion.jpg" alt="Ted,Marshall y Barney viendo una pelicula">
+            <div>
+              <input type="radio" id="JurasicPark" name="FirstQuestion" value="JurasicPark">
+              <label for="JurasicPark">Jurasic Park</label>
+            </div>
+            <div>
+              <input type="radio" id="StarkTrek" name="FirstQuestion" value="StarkTrek">
+              <label for="StarkTrek">Stark Trek</label>              
+            </div>
+            <div>
+              <input type="radio" id="IndiaJones" name="FirstQuestion" value="IndiaJones">
+              <label for="IndiaJones">India Jones</label>
+            </div>
+            <div>
+              <input type="radio" id="StarWars" name="FirstQuestion" value="StarWars">
+              <label for="StarWars">Star Wars</label>
+            </div>
+          </div>
+          <div class="QuestionsRadio">
+            <p class="Context">Al eterno enamorado de Lily se le apoda Scott</p>
+            <img src="./img/SecondQuestion.jpg" alt="Ex Pareja De Lily">
+            <div>
+              <input type="radio" id="Verdadero1" name="SecondQuestion" value="Verdadero">
+              <label for="Verdadero1">Verdadero</label>
+            </div>
+            <div>
+              <input type="radio" id="Falso1" name="SecondQuestion" value="Falso">
+              <label for="Falso1">Falso</label>              
+            </div>
+          </div>
+          <div class="QuestionsRadio">
+            <p class="Context">Después de terminar con Marshall, ¿a qué ciudad se va Lily?</p>
+            <img src="./img/ThirdQuestion.jpg" alt="Lily sonriendo">
+            <div>
+              <input type="radio" id="CiudadMexico" name="ThirdQuestion" value="CiudadMexico">
+              <label for="CiudadMexico">Ciudad De Mexico</label>
+            </div>
+            <div>
+              <input type="radio" id="SanFransisco" name="ThirdQuestion" value="SanFransisco">
+              <label for="SanFransisco">San Fransisco</label>              
+            </div>
+            <div>
+              <input type="radio" id="LosAngeles" name="ThirdQuestion" value="LosAngeles">
+              <label for="LosAngeles">Los Angeles</label>
+            </div>
+            <div>
+              <input type="radio" id="Chicago" name="ThirdQuestion" value="Chicago">
+              <label for="Chicago">Chicago</label>
+            </div>
+          </div>
+          <div class="ButtonsOptions">
+            <label for="Atras2" class="ButtonAction">Atras</label>
+            <label for="Siguiente3" class="ButtonAction">Siguiente</label>
+          </div>
+        </div>
+      </div>
+      <div class="FourthData DesignDefault">
+        <div class="limit">
+          <div class="QuestionsRadio">
+            <p class="Context">Los hijos de Ted se llaman Penny y Luke...</p>
+            <img src="./img/FourthQuestion.jpg" alt="Hijos de ted mosby">
+            <div>
+              <input type="radio" id="Verdadero2" name="FourthQuestion" value="Verdadero">
+              <label for="Verdadero2">Verdadero</label>
+            </div>
+            <div>
+              <input type="radio" id="Falso2" name="FourthQuestion" value="Falso">
+              <label for="Falso2">Falso</label>              
+            </div>
+          </div>
+          <div class="QuestionsRadio">
+            <p class="Context">¿Qué poeta admira Ted?</p>
+            <img src="./img/FifthQuestion.jpg" alt="Ted Leyendo">
+            <div>
+              <input type="radio" id="FedericoGarcia" name="FifthQuestion" value="FedericoGarcia">
+              <label for="FedericoGarcia">Federico Garcia Lorca</label>
+            </div>
+            <div>
+              <input type="radio" id="OctavioPaz" name="FifthQuestion" value="OctavioPaz">
+              <label for="OctavioPaz">Octavio Paz</label>              
+            </div>
+            <div>
+              <input type="radio" id="PabloNeruda" name="FifthQuestion" value="PabloNeruda">
+              <label for="PabloNeruda">Pablo Neruda</label>
+            </div>
+            <div>
+              <input type="radio" id="JorgeLuis" name="FifthQuestion" value="JorgeLuis">
+              <label for="JorgeLuis">Jorge Luis Borges</label>
+            </div>
+          </div>
+          <div class="QuestionsRadio">
+            <p class="Context">¿Cuál de estas mujeres no fue novia de Barney?</p>
+            <img src="./img/SixthQuestion.jpg" alt="Barney Siendo Barney">
+            <div>
+              <input type="radio" id="Robin" name="SixthQuestion" value="Robin">
+              <label for="Robin">Robin</label>
+            </div>
+            <div>
+              <input type="radio" id="Quinn" name="SixthQuestion" value="Quinn">
+              <label for="Quinn">Quinn</label>              
+            </div>
+            <div>
+              <input type="radio" id="Stella" name="SixthQuestion" value="Stella">
+              <label for="Stella">Stella</label>
+            </div>
+            <div>
+              <input type="radio" id="Nora" name="SixthQuestion" value="Nora">
+              <label for="Nora">Nora</label>
+            </div>
+          </div>
+          <div class="ButtonsOptions">
+            <label for="Atras3" class="ButtonAction">Atras</label>
+            <button type="submit" id="submit">
+              <label for="Siguiente4" class="ButtonAction">Finalizar</label>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="FinalData DesignDefault">
+        <div class="limit">
+          <div class="PalabrasAUsuario">
+            <p class="Context">Para Tu Desgracia No Podemos Validar Los Datos, Entonces Nunca Sabras Si Eres Un Verdadero Fan :(</p>
+            <img src="./img/EndImage.webp" alt="Risa Malvada">
+            <p class="RecomendacionAUsuario">Y Si Tienes Afan Por Saberlo Ve A <a href="https://applauss.com/quiz-sabes-how-i-met-your-mother/" target="_blank">La Siguiente Pagina</a>, De Esta Se Sacaron Todas Las Preguntas De Este Cuestionario</p>
+          </div>
+          <div class="Comentario">
+            <p class="Context">Deja Tu Opinion En El Siguiente Campo De Texto, Para Nosotros Es Muy Importante (La Verdad No Tanto)</p>
+            <textarea name="textarea" rows="10" cols="50" placeholder="Empieza Aqui..."></textarea>
+          </div>
+          <label for="Atras4" class="ButtonAction">Atras</label>
+        </div>
+      </div>
+    </form>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    document.querySelector('#survey-form').addEventListener('submit',(e)=>e.preventDefault());
+  </script>
+</body>
+</html>
